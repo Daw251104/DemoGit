@@ -1,0 +1,17 @@
+name: UIA #Ten quy trinh
+
+on:
+  push:
+    branches: ["main"] #Chay khi co code moi day len nhanh main
+
+jobs:
+  thuc_hanh_doc_file: #ten bien
+    ru-on: ubuntu-latest #Muon may ao Ubuntu cua Git
+
+    steps:
+      - name: Buoc 1 - Xin Chao
+        run: echo "Hello Hutech" #Lenh in ra man hinh
+      - name: Buoc 2 - Tai code
+        uses: actions/checkout@v6.0.2 
+      - name: Buoc 3 - Doc file
+        run: cat README.md
