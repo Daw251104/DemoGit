@@ -6,7 +6,7 @@ on:
 
 jobs:
   thuc_hanh_doc_file: #ten bien
-    run: ubuntu-latest #Muon may ao Ubuntu cua Git
+    runs-on: ubuntu-latest #Muon may ao Ubuntu cua Git
 
     steps:
       - name: Buoc 1 - Xin Chao
